@@ -11,7 +11,7 @@ def parse_args():
     parser.add_argument(
         '--model-names',
         type=str,
-        default=[ 'esm1b', 'esm1v1', 'esm1v2', 'esm1v3', 'esm1v4', 'esm1v5', ],
+        default=[ 'esm1b', 'esm2', 'esm1v1', 'esm1v2', 'esm1v3', 'esm1v4', 'esm1v5', ],
         nargs='+',
         help='Type of language model (e.g., esm1b, esm1v1)'
     )
