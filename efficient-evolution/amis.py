@@ -52,6 +52,18 @@ def get_model_name(name):
             'esm1b_t33_650M_UR50S',
             repr_layer=[-1],
         )
+    elif name == "esm2":
+        from fb_model import FBModel
+        model = FBModel(
+            'esm2_t33_650M_UR50D',
+            repr_layer=[-1],
+        )
+    elif name == "esm2-3B":
+        from fb_model import FBModel
+        model = FBModel(
+            'esm2_t36_3B_UR50D',
+            repr_layer=[-1],
+        )
     elif name.startswith('esm1v'):
         from fb_model import FBModel
         model = FBModel(
@@ -219,6 +231,7 @@ def reconstruct_multi_models(
         wt_seq,
         model_names=[
             'esm1b',
+            'esm2',
             'esm1v1',
             'esm1v2',
             'esm1v3',
